@@ -1,0 +1,66 @@
+.hero {
+    display: grid;
+    grid-template-areas: 
+    "title title  name name"
+    "img img subtitle subtitle"
+    "img img subtitle subtitle";
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: 100px repeat(2, 25rem);
+    grid-gap: 20px;
+}
+h1{
+    grid-area: name;
+    font-size: 10rem;
+    align-self: start;
+    text-align: right;
+    justify-self: center;
+}
+.hero_secondary-title {
+    text-align: right;
+    font-size: 7.2rem;
+    font-family: var(--secondary-font);
+}
+
+.subtitle_container{
+    grid-area: subtitle;
+    justify-self: center;
+    align-self: center;
+}
+.hero_greeting{
+    grid-area: title;
+    font-size: 5.2rem;
+    align-self: start;
+    justify-self: center;
+    font-family: var(--secondary-font);
+}
+.blend{
+    grid-area: img;
+    width: 18rem;
+    height: 18rem;
+    background-blend-mode: screen;
+    background-size: cover;
+    background-position: center center;
+    transition: all 0.3s ease-in;
+    &:hover{
+     background-blend-mode: initial;
+    }
+}
+.blend:nth-of-type(1){
+    justify-self: center;
+    background-image: url('../images/hero-panda.png');
+    background-color: var(--main-yellow);
+}
+.blend:nth-of-type(2){
+    align-self: end;
+    justify-self: center;
+    background-image: url('../images/hero-flower.png');
+    background-color: var(--main-teal);
+}
+.blend:nth-of-type(3){
+    justify-self: end;
+    align-self: center;
+    background-blend-mode: screen;
+    background-image: url('../images/hero-pheonix.png');
+    background-color: var(--dark-pink);
+
+}
