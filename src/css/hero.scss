@@ -1,4 +1,5 @@
 .hero {
+    padding-bottom: 8rem;
     display: grid;
     grid-template-areas: 
     "title title  name name"
@@ -35,32 +36,38 @@ h1{
 }
 .blend{
     grid-area: img;
-    width: 18rem;
-    height: 18rem;
-    background-blend-mode: screen;
-    background-size: cover;
-    background-position: center center;
+    width: 25rem;
+    height: 23rem;
+    opacity: 0.7;
+    overflow: hidden;
     transition: all 0.3s ease-in;
     &:hover{
-     background-blend-mode: initial;
+     opacity: 1;
+     outline: 1.5rem solid var(--border-teal);
+    -webkit-transform: scale(1.05) translateY(-0.5rem);
+    transform: scale(1.05) translateY(-0.5rem);
+    -webkit-box-shadow: 0 2.5rem 4rem rgba(0,0,0,0.5);
+    box-shadow: 0 2.5rem 4rem rgba(0,0,0,0.5);
+    z-index: 20;
+    
+    }
+    .panda {
+        transform: scale(1.5) translateY(20px);
+    }
+    .heart {
+        transform: scale(0.5);
     }
 }
 .blend:nth-of-type(1){
     justify-self: center;
-    background-image: url('../images/hero-panda.png');
-    background-color: var(--main-yellow);
 }
 .blend:nth-of-type(2){
+    background: rgba(255, 98, 53, 0.3);
     align-self: end;
     justify-self: center;
-    background-image: url('../images/hero-flower.png');
-    background-color: var(--main-teal);
 }
 .blend:nth-of-type(3){
+    background:linear-gradient(rgba(116,196,185, .9), rgba(132,160,198, .4));
     justify-self: end;
     align-self: center;
-    background-blend-mode: screen;
-    background-image: url('../images/hero-pheonix.png');
-    background-color: var(--dark-pink);
-
 }

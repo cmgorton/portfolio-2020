@@ -1,0 +1,50 @@
+.thoughts {
+    background-color: var(--pale-yellow);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 20rem);
+    grid-gap: 20px;
+
+    h2 {
+        text-align: center;
+        grid-column: 4/6;
+        grid-row: 1/5;
+        justify-self: start;
+        align-items: end;
+        max-width: 39.2rem;
+        background:#F4DCD9;
+        padding-top: 2rem;
+        padding-right: 1.8rem;
+        padding-left: 1.3rem;
+    }
+    img {
+        max-width: 500px;
+        width: 100%;
+        grid-column: 1/4;
+        grid-row: 2;
+        justify-self: center;
+    }
+    p + p {
+        margin-top: 8px;
+    }
+    a {
+        text-align: right;
+        font-family: Courier New;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2.4rem;
+        line-height: 24px;
+        letter-spacing: 0.005em;
+        color: #E67473;
+
+    }
+}
+.thoughts_paragraph {
+    font-size: 1.6rem;
+    max-width: 200px;
+    margin: 0 2rem;
+    line-height: 2;
+    grid-column: 4/4;
+    grid-row: 2;
+    justify-self: end;
+}

@@ -1,12 +1,25 @@
-import React from "react";
+import React from "react"; 
+import PandaAni from "../layout/PandaAni";
+import PhoenixAni from "../layout/PhoenixAni";
+import HeartAni from "../layout/HeartAni";
 import "../../css/hero.scss";
 const Hero = () => {
+
     return (
     <section className="hero">
         <p className="hero_greeting">Hi, I am</p>
-        <div className="blend"></div>
-        <div className="blend"></div>
-        <div className="blend"></div>
+        <PandaAni/>
+        <PhoenixAni/>
+        <HeartAni/>
+
+     
+
+
+
+
+      
+        {/* <HeroImages src={Flower} alt="Hummingbird SVG animation" />
+        <HeroImages src={Phoenix} alt="Phoenix burning SVG animation" /> */}
         <h1 className="hero_title">Christina <br/>Gorton</h1>
         <div className="subtitle_container">
         <h3 className="hero_secondary-title">Instructor</h3>
