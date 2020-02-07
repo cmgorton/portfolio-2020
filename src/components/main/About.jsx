@@ -4,7 +4,7 @@ import Profile from "../../images/profile.png";
 import "../../css/about.scss";
 const About = () => {
     return (
-    <section className="about">
+    <section id="about" className="about">
         <PageTitle title="About Me"/>
         <img src={Profile} alt="black and white image of me with teal background"/>
         <div className="paragraph paragraph-1">

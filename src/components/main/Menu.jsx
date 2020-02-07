@@ -8,7 +8,7 @@ const Menu = () => {
             <div className="logo">Christina Gorton</div>
             <nav>
                 <ul>
-                    <li><Link to ="/about">About</Link></li>
+                    <li><Link to ="#about">About</Link></li>
                     <li><Link to ="/work">Work</Link></li>
                     <li><Link to ="/thoughts">Thoughts</Link></li>
                 </ul>

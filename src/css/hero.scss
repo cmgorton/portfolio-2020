@@ -1,4 +1,5 @@
 .hero {
+    background: var(--off-white);
     padding-bottom: 8rem;
     display: grid;
     grid-template-areas: 
@@ -70,4 +71,31 @@ h1{
     background:linear-gradient(rgba(116,196,185, .9), rgba(132,160,198, .4));
     justify-self: end;
     align-self: center;
+}
+@media (max-width: 76rem){
+    .hero {
+        padding-bottom: 1rem;
+        display: grid;
+        grid-template-areas: 
+        "title "
+        "name"
+        "subtitle"
+        "img "
+        "img ";
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+        grid-gap: 20px;
+    }
+    h1{
+        font-size: 6rem;
+        text-align: left;
+        justify-self: center;
+    }
+    .hero_secondary-title {
+        text-align: left;
+        font-size: 4.2rem;
+    }
+    .blend:nth-of-type(2), .blend:nth-of-type(3){
+        display: none;
+    }
 }

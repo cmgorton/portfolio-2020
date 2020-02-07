@@ -1,9 +1,9 @@
 import React from "react";
 const WorkImages = (props) => {
     return (
-    <figure>
+    <figure className="work_images">
        <img className="blend work" src={props.src} alt={props.alt}/>
-        <figcaption><a>{props.title}</a></figcaption>
+        <figcaption className="work_caption"><a>{props.title}</a></figcaption>
     </figure>
     )
 }
