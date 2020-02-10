@@ -5,21 +5,26 @@ import Courses from "../../images/courses.png";
 import SVG from "../../images/svg.png";
 import CSSArt from "../../images/cssart.png";
 import ReactImage from "../../images/react.png";
+import { Link } from "gatsby"
 import "../../css/work.scss";
 const Work = () => {
     return (
     <section className="work">
         <PageTitle title="Work"/>
-        <WorkImages 
-        src={Courses} 
-        alt="Link to courses created by Christina Gorton" 
-        title="Courses"/>
+    <figure className="work_images">
+        <Link to="/courses">
+       <img className="blend work" src={Courses} alt="svg animations with GreenSock"/>
+        <figcaption className="work_caption"><a>Courses</a></figcaption>
+        </Link>
+      </figure>
         <div className="divide"></div>
         <WorkImages 
+        link = "https://codepen.io/collection/nYGJYj"
         src={CSSArt} 
         alt="Link to CSS Art created by Christina Gorton" 
         title="CSS"/>
         <WorkImages 
+        link = "https://codepen.io/collection/nJzmJB"
         src={SVG} 
         alt="Link to SVG's created by Christina Gorton" 
         title="SVG"/>

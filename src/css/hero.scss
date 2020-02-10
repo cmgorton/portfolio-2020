@@ -1,6 +1,4 @@
 .hero {
-    background: var(--off-white);
-    padding-bottom: 8rem;
     display: grid;
     grid-template-areas: 
     "title title  name name"
@@ -9,18 +7,21 @@
     grid-template-columns: repeat(4, auto);
     grid-template-rows: 100px repeat(2, 25rem);
     grid-gap: 20px;
+    background: var(--off-white);
+    padding-top: 4rem;
+    padding-bottom: 8rem;
 }
 h1{
     grid-area: name;
-    font-size: 10rem;
-    align-self: start;
-    text-align: right;
     justify-self: center;
+    align-self: start;
+    font-size: 10rem;
+    text-align: right;
 }
 .hero_secondary-title {
-    text-align: right;
     font-size: 7.2rem;
     font-family: var(--secondary-font);
+    text-align: right;
 }
 
 .subtitle_container{
@@ -30,9 +31,9 @@ h1{
 }
 .hero_greeting{
     grid-area: title;
-    font-size: 5.2rem;
     align-self: start;
     justify-self: center;
+    font-size: 5.2rem;
     font-family: var(--secondary-font);
 }
 .blend{
@@ -72,19 +73,20 @@ h1{
     justify-self: end;
     align-self: center;
 }
-@media (max-width: 76rem){
+@media (max-width: 56rem){
     .hero {
-        padding-bottom: 1rem;
         display: grid;
         grid-template-areas: 
         "title "
         "name"
-        "subtitle"
         "img "
-        "img ";
+        "img "
+        "subtitle"
+        ;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(5, auto);
         grid-gap: 20px;
+        padding-bottom: 1rem;
     }
     h1{
         font-size: 6rem;

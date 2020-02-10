@@ -1,13 +1,41 @@
 import React from "react";
 import styled from "styled-components";
+import Twitter from "../../images/twitter-color.svg";
+import Linkedin from "../../images/linkedin-color.svg";
+import Github from "../../images/github-color.svg";
+import CodePen from "../../images/codepen.svg";
 
 const FooterMain = styled.footer`
-background-color: #F4DCD9;
-width: 100%;
-padding: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+    height: 20vh
+    padding: 0.5rem;
+    background-color: #F4DCD9;
+
 `
 const CopyRight = styled.h3`
-    font-size: 1rem;
+    font-size: 2rem;
+    margin: 1rem;
+    align-self: center;
+    justify-self: center;
+    @media (max-width: 46rem) {
+        font-size: 1rem;
+     }
+`
+const FooterIcons = styled.div `
+  justify-self: center;
+`
+const IconLink = styled.a`
+    text-underline: none;
+`
+const Icon = styled.img`
+    width: 7.5rem;
+    height: 7.5rem;
+    @media (max-width: 46rem) {
+       width: 4.5rem;
+       height: 4.5rem;
+    }
 `
 const Footer = () => {
 return (
@@ -15,6 +43,20 @@ return (
         <CopyRight>
         All materials © Christina Gorton 2020
         </CopyRight>
+        <FooterIcons className="footer-icons">
+        <IconLink>
+            <Icon src={CodePen} alt="CodePen icon"/>
+        </IconLink>
+        <IconLink>
+            <Icon src={Twitter} alt="twitter icon"/>
+        </IconLink>
+        <IconLink>
+            <Icon src={Github} alt="github icon"/>
+        </IconLink>
+        <IconLink>
+            <Icon src={Linkedin} alt="linked-in icon"/>
+        </IconLink>
+        </FooterIcons>
     </FooterMain>
 )
 }

@@ -1,0 +1,47 @@
+.courses{
+    background: var(--pale-yellow);
+    display: flex;
+    justify-content: space-between;
+    max-width: 1109px;
+    height: 100vh;
+    padding: 2rem;
+    margin: 0 auto;
+    h2{
+        text-align: center;
+        background: var(--main-pink);
+        width: 30vw;
+        height: 100vh;
+        padding: 1rem;
+    }
+    ul {
+    font-size: 3.4rem;
+    padding: 1rem;
+    }
+    li {
+        margin: 3rem;
+    }
+    a {
+        color: var(--primary);
+        transition: 0.2s;
+        &:hover {
+            color: var(--dark-pink);
+        }
+        &:visited, &:active {
+            color: var(--main-teal);
+        }
+    }
+}
+@media (max-width: 66rem){
+    .courses{
+        flex-wrap: wrap;
+
+    h2{
+        order: 1;
+        height: 15vh;
+        width: 100%;
+    }
+    ul {
+        order: 2;
+    }
+}
+}
