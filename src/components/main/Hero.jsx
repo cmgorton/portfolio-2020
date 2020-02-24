@@ -6,7 +6,7 @@ import "../../css/hero.scss"
 const Hero = () => {
   return (
     <section className="hero">
-      <p className="hero_greeting">Hi, I am</p>
+      <h2 className="hero_greeting">Hi, I am</h2>
       <PandaAni />
       <PhoenixAni />
       <HeartAni />

@@ -3,7 +3,7 @@ import gsap from "gsap"
 
 const PhoenixAni = () => {
   const [phoenixAnimation, setPhoenixAnimation] = useState()
-  const [tl] = useState(gsap.timeline({ paused: true, repeat: 1, yoyo: true }))
+  const [tl] = useState(gsap.timeline({ paused: true }))
   useEffect(() => {
     setPhoenixAnimation(
       tl
