@@ -1,33 +1,29 @@
-import React from "react"; 
-import PandaAni from "../layout/PandaAni";
-import PhoenixAni from "../layout/PhoenixAni";
-import HeartAni from "../layout/HeartAni";
-import "../../css/hero.scss";
+import React from "react"
+import PandaAni from "../layout/PandaAni"
+import PhoenixAni from "../layout/PhoenixAni"
+import HeartAni from "../layout/HeartAni"
+import "../../css/hero.scss"
 const Hero = () => {
-
-    return (
+  return (
     <section className="hero">
-        <p className="hero_greeting">Hi, I am</p>
-        <PandaAni/>
-        <PhoenixAni/>
-        <HeartAni/>
+      <p className="hero_greeting">Hi, I am</p>
+      <PandaAni />
+      <PhoenixAni />
+      <HeartAni />
 
-     
-
-
-
-
-      
-        {/* <HeroImages src={Flower} alt="Hummingbird SVG animation" />
-        <HeroImages src={Phoenix} alt="Phoenix burning SVG animation" /> */}
-        <h1 className="hero_title">Christina <br/>Gorton</h1>
-        <div className="subtitle_container">
+      <h1 className="hero_title">
+        Christina <br />
+        Gorton
+      </h1>
+      <div className="subtitle_container">
         <h3 className="hero_secondary-title">Instructor</h3>
         <h3 className="hero_secondary-title">Creator</h3>
-        <h3 className="hero_secondary-title">Front-end <br/> Dev</h3>
-        </div>
+        <h3 className="hero_secondary-title">
+          Front-end <br /> Dev
+        </h3>
+      </div>
     </section>
-    )
+  )
 }
 
-export default Hero;
+export default Hero
