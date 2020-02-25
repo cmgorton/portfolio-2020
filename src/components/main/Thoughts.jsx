@@ -8,12 +8,12 @@ const Thoughts = () => {
       <PageTitle title="Thoughts" />
       <div className="thoughts_paragraph">
         <p>
-          Previously, I’ve worked as a Drupal developer, GreenSock animator, and
-          course creator.
+          I belive it is important to share while you learn. From time to time I
+          like to blog and give back to the tech community.{" "}
         </p>
         <p>
-          I’ve taught students CSS fundamentals and advanced topics and how to
-          create SVG and GreenSock animations.
+          You can check out most of my work on dev.to where I blog about remote
+          work, CSS, SVG/GreenSock animations, React and more.
         </p>
         <a
           target="_blank"

@@ -1,62 +1,85 @@
-@import url('https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap");
 :root {
-    // fonts
-    font-size: 62.5%;
-    --body-fontsize: 1.6rem;
-    --secondary-fontsize: 7.6rem;
-    --work-font: 4.8rem;
-    --primary-font: "Helvitica Neue", sans-serif;
-    --secondary-font: 'Cutive Mono', monospace;
+  // fonts
+  font-size: 62.5%;
+  --body-fontsize: 1.6rem;
+  --secondary-fontsize: 7.6rem;
+  --work-font: 4.8rem;
+  --primary-font: "Helvitica Neue", sans-serif;
+  --secondary-font: "Cutive Mono", monospace;
 
-    // colors
-    --primary: #303030;
-    --off-white: #F8F8F8;
-    --main-pink: #F0AEAE;
-    --dark-pink: #EE7E79;
-    --light-pink: rgba(242, 215, 214, 0.87);
-    --main-teal: #22B3B3;
-    --border-teal: rgba(31, 164, 164, 0.23);
-    --light-teal: rgba(34, 179, 179, 0.08);
-    --main-yellow: #FFCB56;
-    --pale-yellow: #FFFAF0; 
-
+  // colors
+  --primary: #303030;
+  --off-white: #f8f8f8;
+  --main-pink: #f0aeae;
+  --dark-pink: #ee7e79;
+  --light-pink: rgba(242, 215, 214, 0.87);
+  --main-teal: #22b3b3;
+  --border-teal: rgba(31, 164, 164, 0.23);
+  --light-teal: rgba(34, 179, 179, 0.08);
+  --main-yellow: #ffcb56;
+  --pale-yellow: #fffaf0;
 }
-* {box-sizing: border-box;}
-body, div, ul, li, h1, h2, h3, h4, h5, h6, pre, 
-form, fieldset, input, p,nav {
-	padding: 0;
-	margin: 0; 
-	}
-fieldset, img {
-	border: 0;
-	}
+* {
+  box-sizing: border-box;
+}
+body,
+div,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+p,
+nav {
+  padding: 0;
+  margin: 0;
+}
+fieldset,
+img {
+  border: 0;
+}
 ul {
-	list-style: none;
-	}
+  list-style: none;
+}
 caption {
-	text-align: left;
-	}
-q:before, q:after {
-	content: '';
-	}
+  text-align: left;
+}
+q:before,
+q:after {
+  content: "";
+}
 a {
-	text-decoration: none;
-	}
+  text-decoration: none;
+}
 body {
-    background: var(--off-white);
- font-family: var(--primary-font);
- font-size: var(--body-fontsize);
+  background: var(--off-white);
+  font-family: var(--primary-font);
+  font-size: var(--body-fontsize);
 }
 .container {
-    max-width: 1500px;
-    margin: 0 auto;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 h2 {
- font-family: var(--secondary-font);
- font-size: var(--secondary-fontsize);
- font-weight: 500;
- color: var(--primary);
- @media (max-width:56rem) {
-     font-size: 5.6rem;
- }
+  font-family: var(--secondary-font);
+  font-size: var(--secondary-fontsize);
+  font-weight: 500;
+  color: var(--primary);
+  @media (max-width: 56rem) {
+    font-size: 5.6rem;
+  }
+}
+
+section {
+  @media (max-width: 76rem) {
+    padding: 1rem;
+  }
 }
