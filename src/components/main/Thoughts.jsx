@@ -8,8 +8,8 @@ const Thoughts = () => {
       <PageTitle title="Thoughts" />
       <div className="thoughts_paragraph">
         <p>
-          I belive it is important to share while you learn. From time to time I
-          like to blog and give back to the tech community.{" "}
+          I believe it is important to share while you learn. From time to time
+          I like to blog and give back to the tech community.{" "}
         </p>
         <p>
           You can check out most of my work on dev.to where I blog about remote

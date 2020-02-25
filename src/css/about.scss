@@ -78,4 +78,7 @@
   .paragraph {
     max-width: 300px;
   }
+  .paragraph:nth-of-type(1) {
+    margin-top: 2rem;
+  }
 }
