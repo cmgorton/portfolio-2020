@@ -34,8 +34,8 @@ const PhoenixAni = () => {
               ease: "circ",
               from: "random",
             },
-            y: gsap.utils.random([-500, 100, 500]),
-            x: gsap.utils.random([-400, 50, 500]),
+            y: gsap.utils.random([-500, 100, 500, -400]),
+            x: gsap.utils.random([-400, -300, 500, -700]),
             rotate: gsap.utils.random([-480, 360, -200]),
             opacity: 0,
             fill: "gray",
@@ -48,7 +48,7 @@ const PhoenixAni = () => {
   return (
     <div className="blend">
       <svg
-        onMouseOver={() => phoenixAnimation.play()}
+        onClick={() => phoenixAnimation.paused(!phoenixAnimation.paused())}
         className="phoenix"
         viewBox="0 0 530 477"
         xmlns="http://www.w3.org/2000/svg"

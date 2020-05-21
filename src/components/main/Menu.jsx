@@ -15,7 +15,7 @@ const Menu = () => {
           </li>
           <li>
             <a
-              href="https://www.notion.so/christinagorton/8e54b57f206c4a3ca3fa6799d5875548?v=6db17ff55e924619b4de5ca7887a1796"
+              href="https://www.notion.so/christinagorton/74d42c3299e34332981ca8ec3c155dec?v=89340ff3e4f9480db47372264f547d25"
               target="_blank"
               rel="noopener noreferrer"
             >
